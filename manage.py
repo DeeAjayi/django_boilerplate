@@ -5,7 +5,8 @@ import sys
 
 
 def main():
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_boilerplate.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_boilerplate.settings.development')
+    # DJANGO_SETTINGS_MODULE set to development, should be changed when going to production
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
